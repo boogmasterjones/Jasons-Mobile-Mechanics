@@ -1,0 +1,26 @@
+# Old addresses permanently redirect to the new clean addresses.
+/about.html                                                  /about                                             301!
+/index.html                                                  /                                                  301!
+/index                                                       /                                                  301!
+/locations/cape-coral.html                                   /locations/cape-coral                              301!
+/locations/englewood.html                                    /locations/englewood                               301!
+/locations/fort-myers.html                                   /locations/fort-myers                              301!
+/locations/north-port.html                                   /locations/north-port                              301!
+/locations/punta-gorda.html                                  /locations/punta-gorda                             301!
+/locations/venice.html                                       /locations/venice                                  301!
+/services.html                                               /services                                          301!
+/services/ac-repair.html                                     /services/ac-repair                                301!
+/services/alternator-starter.html                            /services/alternator-starter                       301!
+/services/battery-replacement.html                           /services/battery-replacement                      301!
+/services/brake-repair.html                                  /services/brake-repair                             301!
+/services/coolant-flush.html                                 /services/coolant-flush                            301!
+/services/electrical-repair.html                             /services/electrical-repair                        301!
+/services/engine-diagnostics.html                            /services/engine-diagnostics                       301!
+/services/fuel-system.html                                   /services/fuel-system                              301!
+/services/oil-change.html                                    /services/oil-change                               301!
+/services/pre-purchase-inspection.html                       /services/pre-purchase-inspection                  301!
+/services/serpentine-belt.html                               /services/serpentine-belt                          301!
+/services/spark-plugs-tune-up.html                           /services/spark-plugs-tune-up                      301!
+/services/suspension-steering.html                           /services/suspension-steering                      301!
+/services/transmission-service.html                          /services/transmission-service                     301!
+

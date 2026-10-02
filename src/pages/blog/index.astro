@@ -1,0 +1,38 @@
+---
+import Base from '../../layouts/Base.astro';
+import { formatDate, getPosts, readingTime } from '../../lib/content';
+import { breadcrumbSchema } from '../../lib/schema';
+import { site } from '../../lib/site';
+
+const posts = await getPosts();
+const jsonLd = [breadcrumbSchema([{ name: 'Home', path: '/' }, { name: 'Blog', path: '/blog' }])];
+const title = "Car Care Tips & Guides | Jason's Mobile Mechanics";
+const description = "Practical advice on brakes, batteries, diagnostics and keeping your car on the road in Southwest Florida, from Jason's Mobile Mechanics in Port Charlotte.";
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <section class="hero section-dark">
+    <div class="container">
+      <div class="hero-eyebrow">Mobile Auto Repair &mdash; Port Charlotte, FL</div>
+      <h1>CAR CARE<br><span class="highlight">TIPS &amp; GUIDES</span></h1>
+      <p class="hero-lead">Straight answers about brakes, batteries, diagnostics and keeping your car running in Southwest Florida.</p>
+    </div>
+  </section>
+  <section class="section-cream">
+    <div class="container">
+      <div class="services-grid">
+      {posts.length === 0 && <p>New articles are coming soon.</p>}
+      {posts.map((p) => (
+        <div class="service-card">
+          {p.data.category && <span class="card-num">{p.data.category}</span>}
+          <h3>{p.data.title}</h3>
+          <p>{p.data.description}</p>
+          <p style="font-size:0.85rem;opacity:0.8">{formatDate(p.data.date)} &middot; {readingTime(p.body ?? '')}</p>
+          <a href={`/blog/${p.id}`} class="btn btn-outline" style="margin-top:8px">Read Article</a>
+        </div>
+      ))}
+      </div>
+    </div>
+  </section>
+
+</Base>

@@ -48,7 +48,7 @@ path: "/about"
       <div class="section-label"><span>——</span> Get a Quote</div>
       <h2 class="section-title section-title-dark">REQUEST<br>A QUOTE</h2>
       <p class="form-intro">Fill out the form below and we'll get back to you with a quote. Or call directly for a faster response: <a href="tel:+18632669708" onclick="if(typeof gtag==='function')gtag('event','call_click',{'event_category':'engagement','event_label':'about_form_phone_link'})">863-266-9708</a>.</p>
-      <form class="contact-form" name="quote-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <form class="contact-form" name="quote-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-progressive-fields>
         <input type="hidden" name="form-name" value="quote-request">
         <p hidden=""><label>Don't fill this out: <input name="bot-field"></label></p>
         <div class="form-row">

@@ -124,7 +124,6 @@ path: "/"
         <button class="carousel-arrow" id="workNext" aria-label="Next job photo">→</button>
       </div>
     </div>
-    <p class="carousel-placeholder-note">Job photos coming soon — replace the placeholder cards above with real before/after photos from completed repairs.</p>
   </section>
   <!-- GET A QUOTE FORM -->
   <section class="section-dark quote-section">
@@ -248,7 +247,6 @@ path: "/"
     <div class="container reviews-cta-wrap">
       <!-- Replace # below with your actual Google Business Profile reviews URL -->
       <a href="#" class="btn btn-orange">Read More Reviews on Google</a>
-      <p class="placeholder-note">Update the button link above with your Google Business Profile URL once your GBP is live.</p>
     </div>
   </section>
   <!-- TRUST STRIP -->

@@ -1,0 +1,75 @@
+{
+  "site": {
+    "url": "https://www.jasonsmobilemechanicsfl.com",
+    "locale": "en-US",
+    "calendlyUrl": "",
+    "formAction": "",
+    "defaultOgImage": "/favicon.svg",
+    "gaMeasurementId": "",
+    "googleSiteVerification": "adyQlIv4MhdhxzaQTjPMhl9cOvZLEwdGQZKEbvZ_0dY"
+  },
+  "business": {
+    "name": "Jason's Mobile Mechanics",
+    "kind": "operating",
+    "schemaType": "AutoRepair",
+    "tagline": "Mobile auto repair serving Port Charlotte, FL and Charlotte County.",
+    "description": "Jason's Mobile Mechanics is a mobile auto repair service based in Port Charlotte, Florida. The mechanic comes to your driveway or workplace with the tools and parts for brakes, batteries, diagnostics, oil changes and more.",
+    "phone": "(863) 266-9708",
+    "email": "",
+    "regionLabel": "Port Charlotte & Southwest Florida",
+    "alsoServing": [
+      "Port Charlotte"
+    ],
+    "address": {
+      "street": "",
+      "city": "Port Charlotte",
+      "region": "FL",
+      "postalCode": "",
+      "showOnSite": false
+    },
+    "hours": [
+      {
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [],
+    "googleMapsUrl": "",
+    "rating": null
+  },
+  "brand": {
+    "logoText": "Jason's Mobile Mechanics",
+    "colors": {
+      "primary": "#14161A",
+      "primaryAlt": "#1E2127",
+      "action": "#E8762B",
+      "accent": "#F2C14E",
+      "surface": "#FFFFFF",
+      "surfaceAlt": "#F6F1E7",
+      "ink": "#14161A",
+      "body": "#3D4A5C"
+    },
+    "fonts": {
+      "heading": "Oswald",
+      "body": "Inter",
+      "googleFontsUrl": ""
+    }
+  },
+  "trustBadges": [
+    "Licensed & Insured",
+    "Same-Day Appointments"
+  ],
+  "stats": [],
+  "cta": {
+    "label": "Request a Quote",
+    "href": "/about"
+  }
+}

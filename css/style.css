@@ -203,6 +203,67 @@ nav.main-nav {
   }
 }
 
+/* Header: prevent overflow on narrow phones — logo/nav/CTA no longer fit
+   at full desktop size below ~500px, so shrink and let the logo drop its subtitle. */
+@media (max-width: 560px) {
+  .site-header .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 8px;
+  }
+
+  .logo { gap: 8px; }
+
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .logo-icon svg { width: 18px; height: 18px; }
+
+  .logo-name {
+    font-size: 0.82rem;
+    letter-spacing: 0.01em;
+  }
+
+  .logo-sub { display: none; }
+
+  .nav-dropdown-btn {
+    padding: 7px 10px;
+    font-size: 0.66rem;
+    gap: 5px;
+  }
+
+  .header-cta .btn-call {
+    padding: 8px 12px;
+  }
+
+  .header-cta .btn-call .call-label { display: none; }
+
+  .call-num { font-size: 0.76rem; }
+}
+
+/* Below ~430px there isn't room for the header phone number at all —
+   collapse the header call button to a tap-friendly icon (the sticky
+   bottom bar keeps the full number visible for these viewports). */
+@media (max-width: 430px) {
+  .header-cta .btn-call {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  .header-cta .btn-call .call-num { display: none; }
+
+  .header-cta .btn-call::after {
+    content: "\260E";
+    font-size: 1.15rem;
+    line-height: 1;
+  }
+}
+
 /* ======================================================
    MARQUEE STRIP
 ====================================================== */
@@ -609,14 +670,50 @@ section { padding: 100px 0; }
   font-size: 1.15rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-top: 28px;
-  margin-bottom: 10px;
+  margin-top: 32px;
+  margin-bottom: 14px;
   color: var(--text-dark);
+  position: relative;
+  padding-left: 16px;
+}
+
+.content-block h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  bottom: 2px;
+  width: 3px;
+  background: var(--orange);
 }
 
 .content-block p { color: var(--text-cream); margin-bottom: 16px; line-height: 1.72; font-size: 0.97rem; }
-.content-block ul { color: var(--text-cream); padding-left: 20px; margin-bottom: 16px; }
-.content-block ul li { margin-bottom: 8px; line-height: 1.6; font-size: 0.97rem; }
+
+.content-block p:first-of-type {
+  font-size: 1.08rem;
+  line-height: 1.68;
+  color: var(--text-dark);
+}
+
+.content-block ul { color: var(--text-cream); list-style: none; padding-left: 0; margin-bottom: 16px; }
+
+.content-block ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 0.97rem;
+  padding-left: 24px;
+  position: relative;
+}
+
+.content-block ul li::before {
+  content: "\2192";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--orange);
+  font-weight: 700;
+}
+
 
 /* ======================================================
    CTA BANNER
@@ -840,21 +937,697 @@ footer.site-footer {
 }
 
 /* ======================================================
+   WORK CAROUSEL
+====================================================== */
+.work-carousel-section { padding-bottom: 48px; }
+.work-carousel-section > .container { padding-bottom: 0; }
+
+.work-carousel-outer { margin-top: 0; }
+
+.work-carousel-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.work-carousel-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 0 24px 24px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  flex: 1;
+}
+
+.work-carousel-track::-webkit-scrollbar { display: none; }
+
+.work-card {
+  flex-shrink: 0;
+  width: 300px;
+  scroll-snap-align: start;
+}
+
+.work-card-photo {
+  aspect-ratio: 4 / 3;
+  background: var(--charcoal-light);
+  border: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.work-card-photo svg {
+  width: 52px;
+  height: 52px;
+  color: #444;
+  opacity: 0.6;
+}
+
+.work-card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.work-card-caption {
+  background: var(--charcoal-mid);
+  border-top: 3px solid var(--orange);
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.work-card-service {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.work-card-location {
+  font-size: 0.76rem;
+  color: #666;
+  letter-spacing: 0.04em;
+}
+
+.carousel-arrow {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  background: var(--charcoal-light);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--white);
+  font-size: 1.15rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, border-color 0.15s;
+  z-index: 10;
+  line-height: 1;
+}
+
+.carousel-arrow:hover { background: var(--orange); border-color: var(--orange); }
+
+.carousel-placeholder-note {
+  text-align: center;
+  font-size: 0.72rem;
+  color: #444;
+  font-style: italic;
+  padding: 0 24px 8px;
+}
+
+/* ======================================================
+   QUOTE FORM SECTION
+====================================================== */
+.quote-section {
+  background: var(--charcoal-mid);
+  border-top: 1px solid var(--charcoal-light);
+  position: relative;
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  gap: 64px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .quote-grid { grid-template-columns: 1fr; gap: 48px; }
+}
+
+.quote-intro .section-title { margin-bottom: 0; }
+
+.quote-subtext {
+  color: #888;
+  font-size: 0.95rem;
+  line-height: 1.68;
+  margin-bottom: 24px;
+  margin-top: 18px;
+  max-width: 460px;
+}
+
+.quote-form-wrap {
+  background: var(--white);
+  position: relative;
+  box-shadow: 0 30px 60px -20px rgba(0,0,0,0.5);
+}
+
+.quote-form-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 6px;
+  background: var(--orange);
+}
+
+.qf-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 28px 12px;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.qf-header svg {
+  width: 20px;
+  height: 20px;
+  color: var(--orange);
+  flex-shrink: 0;
+}
+
+.qf-header-text .qf-eyebrow {
+  font-family: var(--font-heading);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted-cream);
+  display: block;
+}
+
+.qf-header-text h3 {
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-top: 1px;
+}
+
+.homepage-quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 28px 26px;
+}
+
+/* .qf-row/.qf-group and the stage-4 wrapper set their own `display`, which
+   would otherwise beat the browser's default [hidden] rule. This selector is
+   deliberately more specific than all of them so `hidden` always wins. */
+.homepage-quote-form .qf-stage[hidden] {
+  display: none;
+}
+
+.qf-stage {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+div.qf-stage[data-stage="4"] {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.qf-stage.qf-stage-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+  .qf-header { padding: 18px 20px 12px; }
+  .homepage-quote-form { padding: 18px 20px 24px; }
+}
+
+.qf-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 540px) {
+  .qf-row { grid-template-columns: 1fr; }
+}
+
+.qf-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.qf-group > label,
+.homepage-quote-form > .qf-group > label {
+  font-family: var(--font-heading);
+  font-size: 0.66rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.qf-group input[type="text"],
+.qf-group input[type="tel"],
+.qf-group input[type="email"] {
+  padding: 8px 2px;
+  border: none;
+  border-bottom: 2px solid var(--cream-dark);
+  border-radius: 0;
+  font-size: 0.92rem;
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  outline: none;
+  background: transparent;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.qf-group input::placeholder { color: #b8ab98; }
+
+.qf-group input:focus { border-bottom-color: var(--orange); }
+
+.qf-fieldset-label {
+  font-family: var(--font-heading);
+  font-size: 0.66rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-dark);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.qf-check-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+}
+
+@media (max-width: 440px) {
+  .qf-check-grid { grid-template-columns: 1fr; }
+}
+
+.qf-check {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-cream);
+  cursor: pointer;
+  line-height: 1.25;
+  padding: 7px 10px;
+  border: 1px solid var(--cream-dark);
+  background: var(--cream);
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.qf-check:hover { border-color: var(--orange); }
+
+.qf-check:has(input:checked) {
+  background: var(--charcoal);
+  border-color: var(--charcoal);
+  color: var(--white);
+}
+
+.qf-check input[type="checkbox"] {
+  accent-color: var(--orange);
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.qf-radio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.qf-radio {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--text-cream);
+  cursor: pointer;
+  padding: 8px 14px;
+  border: 2px solid var(--cream-dark);
+  background: var(--cream);
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.qf-radio:hover { border-color: var(--orange); }
+
+.qf-radio:has(input:checked) {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: var(--white);
+}
+
+.qf-radio input[type="radio"] {
+  accent-color: var(--orange);
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.qf-submit {
+  padding: 13px 28px;
+  font-size: 0.85rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  border: none;
+  margin-top: 2px;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.qf-submit:hover { transform: translateY(-2px); }
+.qf-submit svg { width: 16px; height: 16px; }
+
+.qf-privacy-note {
+  font-size: 0.7rem;
+  color: var(--muted-cream);
+  text-align: center;
+  margin-top: -6px;
+}
+
+/* ======================================================
+   REVIEWS SECTION
+====================================================== */
+.reviews-section {
+  border-top: 1px solid var(--charcoal-light);
+}
+
+.reviews-section > .container { padding-bottom: 0; }
+
+.reviews-outer { margin-top: 0; }
+
+.reviews-carousel-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 0 24px 24px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  flex: 1;
+}
+
+.reviews-track::-webkit-scrollbar { display: none; }
+
+.review-card {
+  flex-shrink: 0;
+  width: 360px;
+  scroll-snap-align: start;
+  background: var(--white);
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 640px) {
+  .review-card { width: 300px; padding: 28px 24px; }
+}
+
+.review-stars {
+  font-size: 1.3rem;
+  color: var(--orange);
+  letter-spacing: 3px;
+  line-height: 1;
+}
+
+.review-quote {
+  font-size: 0.97rem;
+  color: var(--text-cream);
+  line-height: 1.72;
+  font-style: italic;
+  flex: 1;
+}
+
+.review-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dark);
+  border-top: 1px solid var(--cream-dark);
+  padding-top: 14px;
+}
+
+.reviews-cta-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding-top: 44px;
+}
+
+.reviews-cta-wrap .btn { padding: 18px 52px; }
+
+/* ======================================================
+   READ MORE TOGGLE (mobile long-form copy)
+====================================================== */
+.cb-toggle {
+  display: none;
+  margin: 14px auto 0;
+  background: transparent;
+  border: 2px solid var(--cream-dark);
+  color: var(--text-dark);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 11px 26px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.cb-toggle:hover { border-color: var(--orange); color: var(--orange); }
+
+@media (max-width: 640px) {
+  .cb-toggle { display: block; }
+}
+
+/* ======================================================
    UTILITY
 ====================================================== */
 .text-center { text-align: center; }
 picture { display: contents; }
 
 @media (max-width: 640px) {
-  .hero { padding: 72px 0 60px; }
-  section { padding: 64px 0; }
-  .cta-banner { padding: 72px 0; }
+  .hero { padding: 34px 0 24px; }
+
+  /* Landing hero fills the phone screen: viewport height minus the marquee
+     strip above it (52px) and the fixed call bar below it (60px). dvh so
+     the mobile address bar showing/hiding doesn't cause a scroll jump.
+     Inner-page heroes carry less copy, so they stay their natural height. */
+  .hero-full {
+    min-height: calc(100vh - 112px);
+    min-height: calc(100dvh - 112px);
+    display: flex;
+    align-items: center;
+  }
+  .hero-full > .container { width: 100%; }
+  .hero h1 { font-size: clamp(2.7rem, 11.6vw, 3.6rem); margin-bottom: 18px; line-height: 1.0; }
+  .hero-eyebrow { padding: 7px 15px; margin-bottom: 20px; font-size: 0.7rem; }
+
+  /* Subtext stays deliberately subordinate to the headline, just scaled up
+     along with everything else. */
+  .hero-lead {
+    font-size: 0.95rem;
+    color: #949494;
+    line-height: 1.6;
+    max-width: 100%;
+    margin-bottom: 22px;
+  }
+
+  .hero-badges { margin-bottom: 24px; gap: 7px; }
+  .badge { font-size: 0.7rem; padding: 7px 13px; }
+
+  /* Buttons are the hero's focal point: full-width, tall tap targets */
+  .hero-cta-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .hero-cta-row .btn {
+    width: 100%;
+    padding: 21px 24px;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  section { padding: 26px 0; }
+  .section-label { margin-bottom: 6px; font-size: 0.64rem; }
+  .section-title { font-size: clamp(1.5rem, 8vw, 2.1rem); margin-bottom: 16px; }
+
+  .cta-banner { padding: 32px 0; }
+  .cta-banner h2 { font-size: clamp(1.6rem, 8vw, 2.3rem); margin-bottom: 10px; }
+  .cta-banner p { font-size: 0.86rem; margin-bottom: 18px; }
+  .cta-banner .btn { padding: 14px 28px; font-size: 0.85rem; }
+
   .sticky-text { display: none; }
   .sticky-bar .container { justify-content: center; }
   .sticky-cta { padding: 10px 40px; }
-  .trust-item { padding: 18px 20px; font-size: 0.78rem; }
-  .service-card { padding: 36px 24px; }
-  .service-card-dark { padding: 32px 24px; }
-  .card-num { font-size: 3.8rem; }
-  .step-num { font-size: 4rem; }
+
+  /* Trust strip: 2-column grid instead of a tall single-file stack */
+  .trust-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .trust-item {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    padding: 11px 8px;
+    font-size: 0.6rem;
+    letter-spacing: 0.03em;
+    border-right: 1px solid var(--cream);
+    border-bottom: 1px solid var(--cream);
+  }
+  .trust-item:nth-child(2n) { border-right: none; }
+  .trust-item:last-child,
+  .trust-item:nth-last-child(2):nth-child(odd) { border-bottom: none; }
+  .trust-item svg { width: 15px; height: 15px; }
+
+  /* Work carousel */
+  .work-carousel-section { padding-bottom: 20px; }
+  .work-card { width: 168px; }
+  .carousel-arrow { width: 32px; height: 32px; font-size: 0.85rem; }
+  .work-carousel-track { padding: 0 8px 10px; gap: 8px; }
+  .work-card-caption { padding: 8px 10px; }
+  .work-card-service { font-size: 0.68rem; }
+  .work-card-photo svg { width: 34px; height: 34px; }
+  .carousel-placeholder-note { font-size: 0.6rem; padding: 0 12px 2px; }
+
+  /* Quote form section */
+  .quote-section { padding: 26px 0; }
+  .quote-grid { gap: 22px; }
+  .quote-subtext { font-size: 0.84rem; margin-bottom: 14px; margin-top: 12px; }
+
+  /* Reviews carousel */
+  .reviews-track { padding: 0 8px 10px; gap: 10px; }
+  .review-card { width: 240px; padding: 20px 18px; gap: 10px; }
+  .review-quote { font-size: 0.84rem; }
+  .review-stars { font-size: 1.05rem; }
+  .reviews-cta-wrap { padding-top: 18px; gap: 8px; }
+  .reviews-cta-wrap .btn { padding: 13px 26px; font-size: 0.84rem; }
+
+  /* Services grid: 2-column instead of one card per row */
+  .services-grid,
+  .services-grid-dark {
+    grid-template-columns: 1fr 1fr;
+  }
+  .service-card,
+  .service-card-dark {
+    padding: 16px 12px;
+    gap: 6px;
+  }
+  .card-num { font-size: 1.8rem; -webkit-text-stroke: 2px var(--orange); }
+  .card-icon { width: 22px; height: 22px; }
+  .service-card h3,
+  .service-card-dark h3 { font-size: 0.8rem; letter-spacing: 0.03em; margin-top: 0; }
+  .service-card p,
+  .service-card-dark p { font-size: 0.74rem; line-height: 1.42; }
+  .card-cta { font-size: 0.64rem; margin-top: 0; }
+
+  /* How it works: 2x2 grid instead of 4 stacked rows */
+  .steps-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 14px;
+  }
+  .step-num { font-size: 2rem; -webkit-text-stroke: 2px var(--orange); }
+  .step-item { gap: 6px; }
+  .step-item h3 { font-size: 0.82rem; }
+  .step-item p { font-size: 0.76rem; line-height: 1.45; }
+
+  /* Location chips */
+  .location-chips { gap: 6px; }
+  .location-chips a { padding: 9px 14px; font-size: 0.72rem; }
+
+  /* Long-form content: obviously smaller than a desktop text block */
+  .content-block h2 { font-size: 1.2rem; margin-bottom: 10px; }
+  .content-block h3 { font-size: 0.88rem; margin-top: 20px; margin-bottom: 8px; }
+  .content-block p { font-size: 0.84rem; line-height: 1.58; margin-bottom: 12px; }
+  .content-block p:first-of-type { font-size: 0.9rem; }
+  .content-block ul li { font-size: 0.84rem; margin-bottom: 6px; }
+
+  /* Long-form SEO copy collapses behind a Read More on phones. The text
+     stays in the DOM (clipped, not display:none) so it still indexes. */
+  .content-block.cb-collapsed {
+    max-height: 260px;
+    overflow: hidden;
+    position: relative;
+  }
+  .content-block.cb-collapsed::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 90px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(240, 235, 224, 0), var(--cream));
+  }
+  .section-cream-alt .content-block.cb-collapsed::after {
+    background: linear-gradient(to bottom, rgba(228, 221, 208, 0), var(--cream-dark));
+  }
+
+  /* Footer: 2-up columns, and the 14-item service list splits in two
+     rather than running as one very long single-file column */
+  footer.site-footer { padding: 26px 0 16px; }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 16px;
+    margin-bottom: 20px;
+  }
+  .footer-grid > div:first-child { grid-column: 1 / -1; }
+  .footer-grid h4 { font-size: 0.72rem; margin-bottom: 8px; }
+  .footer-grid p { font-size: 0.76rem; line-height: 1.5; }
+  .footer-grid a { font-size: 0.76rem; }
+  .footer-grid ul li { margin-bottom: 5px; }
+  .footer-grid > div:nth-child(2) ul {
+    columns: 2;
+    column-gap: 14px;
+  }
+  .footer-grid > div:nth-child(2) { grid-column: 1 / -1; }
+  .footer-disclaimer { font-size: 0.66rem; margin-bottom: 14px; }
+  .footer-bottom { font-size: 0.7rem; padding-top: 14px; }
+}
+
+/* Shorter phones (iPhone SE/8 at 667px tall and similar): the full-size hero
+   would push the second CTA underneath the fixed call bar, so tighten the
+   vertical rhythm just enough to keep both buttons reachable without a
+   scroll. Type stays large — only spacing and button padding give ground. */
+@media (max-width: 640px) and (max-height: 700px) {
+  .hero { padding: 20px 0 14px; }
+  .hero-eyebrow { margin-bottom: 13px; }
+  .hero h1 { font-size: clamp(2.4rem, 10.5vw, 3.1rem); margin-bottom: 12px; }
+  .hero-lead { font-size: 0.88rem; line-height: 1.52; margin-bottom: 14px; }
+  .hero-badges { margin-bottom: 14px; }
+  .hero-cta-row { gap: 10px; }
+  .hero-cta-row .btn { padding: 16px 22px; font-size: 1.02rem; }
 }

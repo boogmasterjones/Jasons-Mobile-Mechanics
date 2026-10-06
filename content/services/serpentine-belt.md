@@ -1,6 +1,6 @@
 ---
-title: "Serpentine Belt Replacement in Port Charlotte, FL | Jason's Mobile Mechanics"
-description: "Squealing belt or stranded by a snapped serpentine belt? Jason's Mobile Mechanics replaces belts and tensioners at your location in Port Charlotte, FL."
+title: "Serpentine Belt Replacement in North Port & Port Charlotte, FL"
+description: "On-site serpentine belt replacement in North Port, Port Charlotte and Charlotte County. Jason's Mobile Mechanics comes to you and quotes upfront."
 name: "SERPENTINE BELT REPLACEMENT"
 heading: "SERPENTINE BELT REPLACEMENT ON-SITE"
 summary: "Squealing from the engine bay or stranded by a snapped belt? Jason's Mobile Mechanics replaces serpentine belts, tensioners, and idler pulleys right where your vehicle is — no tow truck required for…"
@@ -12,6 +12,8 @@ faqs:
     answer: "On most vehicles, a serpentine belt swap takes 30–60 minutes on-site. If the tensioner or idler pulleys also need to be replaced, add another 30 minutes. We route the new belt following the diagram on the engine bay sticker so the job is done correctly the first time."
   - question: "How often should I replace the serpentine belt?"
     answer: "Most manufacturers recommend replacement every 60,000–100,000 miles. However, Florida heat accelerates rubber degradation, so belts can crack, glaze, or shed ribs earlier than the mileage interval suggests. Annual visual inspection is worthwhile if the belt is over 50,000 miles old."
+  - question: "Can you replace a serpentine belt at my home in North Port?"
+    answer: "Yes. Jason's Mobile Mechanics is a mobile service, so we replace serpentine belts at your home, your workplace or the roadside in North Port, with no tow needed. You get an upfront quote before any work begins. If we find another problem, we tell you the cost before we work on it. Same-day appointments are offered. Call (863) 266-9708."
 ---
 
 <section class="hero section-dark">
@@ -91,3 +93,24 @@ faqs:
       <a href="tel:+18632669708" class="btn btn-orange" onclick="if(typeof gtag==='function')gtag('event','call_click',{'event_category':'engagement','event_label':'service_bottom_phone_button'})">Call 863-266-9708</a>
     </div>
   </section>
+
+## Serpentine Belt Replacement in North Port
+
+Jason's Mobile Mechanics replaces serpentine belts on-site in [North Port](/locations/north-port). The work happens in your driveway, your workplace parking lot or at the roadside, so you don't need a tow and you don't need to find a ride to a shop.
+
+Before any work begins, you get an upfront quote. If we find another problem along the way, we tell you what it will cost before we work on it. Same-day appointments are offered, and we reply to quote requests within one business day.
+
+We're based in Port Charlotte and also cover [Punta Gorda](/locations/punta-gorda), [Englewood](/locations/englewood), [Venice](/locations/venice) and the rest of Charlotte and Sarasota counties. Call (863) 266-9708 to book a visit.
+
+## Signs Your Serpentine Belt Needs Replacing
+
+A worn serpentine belt usually gives some warning before it fails. Watch for these signs:
+
+- **Squealing or chirping** from the engine, especially on startup or in wet weather
+- **Cracks, a shiny glazed surface or missing ribs** on the belt
+- **Battery warning light** on the dash, which can mean the alternator isn't charging. See our [alternator and starter repair](/services/alternator-starter) page.
+- **AC stops blowing cold** at the same time as another belt symptom. See [AC repair](/services/ac-repair).
+- **Heavy steering** that comes on suddenly
+- **Engine temperature climbing**, because the belt drives the water pump on most vehicles
+
+If you notice any of these, stop driving and call (863) 266-9708. If you're not sure what's wrong, [engine diagnostics](/services/engine-diagnostics) can find the cause.

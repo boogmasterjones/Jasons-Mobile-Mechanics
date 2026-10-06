@@ -1,6 +1,6 @@
 ---
-title: "Engine Diagnostics Port Charlotte, FL | Jason's Mobile Mechanics"
-description: "Check engine light on in Port Charlotte, FL? Jason's Mobile Mechanics scans, diagnoses, and explains the codes on-site. Call for an upfront quote."
+title: "Mobile Check Engine Light Diagnostics in Port Charlotte, FL"
+description: "Check engine light on? We diagnose it at your home or work in Port Charlotte and Charlotte County, with an upfront quote before any repair."
 name: "ENGINE DIAGNOSTICS"
 heading: "ENGINE DIAGNOSTICS ON-SITE IN PORT CHARLOTTE"
 summary: "Check engine light on and you don't know why? Jason's Mobile Mechanics scans your vehicle and explains the codes in plain English — at your location, not a shop waiting room."
@@ -12,6 +12,10 @@ faqs:
     answer: "P0420 means the catalytic converter efficiency is below threshold. It often indicates a failing catalytic converter or an upstream oxygen sensor that is giving incorrect readings."
   - question: "Can I drive with the check engine light on?"
     answer: "It depends on what is triggering it. A steady check engine light often means a non-emergency issue like a sensor or EVAP leak. A flashing check engine light indicates an active misfire and you should reduce speed and avoid hard acceleration until it is diagnosed."
+  - question: "Is it safe to drive with the check engine light on?"
+    answer: "A steady check engine light usually points to a non-emergency issue, such as a sensor or an EVAP leak, but it should still be checked soon. A flashing light means an active misfire. Reduce speed, avoid hard acceleration and have it diagnosed before driving far. If you're not sure, call (863) 266-9708 and we can come to the car so you don't have to drive it anywhere."
+  - question: "Do you come to me for diagnostics?"
+    answer: "Yes. Jason's Mobile Mechanics is a mobile service. We scan and diagnose your vehicle at your home, your workplace or the roadside in Port Charlotte, Charlotte County and the surrounding Southwest Florida area, so no tow is needed. Same-day appointments are offered."
 ---
 
 <section class="hero section-dark">
@@ -93,3 +97,14 @@ faqs:
       <a href="tel:+18632669708" class="btn btn-orange" onclick="if(typeof gtag==='function')gtag('event','call_click',{'event_category':'engagement','event_label':'service_bottom_phone_button'})">Call 863-266-9708</a>
     </div>
   </section>
+
+## Check Engine Light On in Port Charlotte?
+
+If your check engine light comes on in Port Charlotte, you don't need to book a shop and sit in a waiting room. Here is how a diagnostic visit works:
+
+1. Call (863) 266-9708 and we agree a time and place: your driveway, your workplace or the roadside. Same-day appointments are offered.
+2. We connect an OBD-II scanner, pull all stored and pending codes, and review live sensor data.
+3. We explain what we found in plain English and give you an upfront quote before any work begins.
+4. If we find another problem along the way, we tell you what it will cost before we work on it.
+
+If the cause turns out to be ignition, fuel or wiring, we also offer [spark plugs and tune-ups](/services/spark-plugs-tune-up), [fuel system service](/services/fuel-system) and [electrical repair](/services/electrical-repair). We also cover nearby [Punta Gorda](/locations/punta-gorda) and [Venice](/locations/venice).

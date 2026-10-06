@@ -1,6 +1,6 @@
 ---
-title: "Pre-Purchase Inspection Port Charlotte, FL | Jason's Mobile Mechanics"
-description: "Buying a used car in Port Charlotte, FL? Jason's Mobile Mechanics performs independent pre-purchase inspections on-site wherever the vehicle is located. Call now."
+title: "Mobile Pre-Purchase Car Inspection in Port Charlotte, FL"
+description: "Buying a used car in Port Charlotte, FL? Jason's Mobile Mechanics inspects it at the seller's location, with an upfront quote before any work begins."
 name: "PRE-PURCHASE VEHICLE INSPECTION"
 heading: "PRE-PURCHASE VEHICLE INSPECTION"
 summary: "Buying a used car in Southwest Florida? Jason's Mobile Mechanics inspects the vehicle at the seller's location so you know exactly what you're getting before you sign anything."
@@ -12,6 +12,8 @@ faqs:
     answer: "We check the engine with an OBD-II diagnostic scan, brakes, tires, and suspension components, frame and body for accident damage indicators, all fluid levels and leak points, the electrical system and battery condition, and perform a short test drive."
   - question: "How much does a pre-purchase inspection cost compared to what it can save?"
     answer: "A pre-purchase inspection typically costs $150-$200. It can reveal hidden problems that would cost thousands in post-purchase repairs and gives you negotiating leverage if issues are found — often saving far more than the cost of the inspection."
+  - question: "Can you inspect a car I found on a private sale or online listing?"
+    answer: "Yes. Jason's Mobile Mechanics comes to the vehicle, so the inspection happens wherever it is parked in Port Charlotte or the surrounding Southwest Florida area. There is no need to arrange a shop visit with the seller."
 ---
 
 <section class="hero section-dark">
@@ -74,7 +76,7 @@ faqs:
           <li>A Carfax report shows accident history but doesn't tell you if repairs were done correctly</li>
           <li>Dealer inspections are done by the same party who benefits from selling you the car</li>
           <li>Cosmetically clean vehicles routinely have hidden mechanical problems in Florida's humidity and heat</li>
-          <li>A $150–$200 inspection can save you thousands in post-purchase repairs</li>
+          <li>You get an upfront quote before the inspection begins</li>
         </ul>
         <h3>Florida-Specific Issues We Look For</h3>
         <p>Buying a used car in Southwest Florida carries risks that buyers from cooler climates don't always anticipate. Vehicles that have spent years in the region often show evidence of salt air exposure in the undercarriage — rust on brake lines, fuel lines, and suspension components that can be difficult to spot from above but clearly visible during a ground-level inspection. Vehicles that have lived near Charlotte Harbor, Lemon Bay, or the Gulf waterfront are especially prone to accelerated corrosion, even on models that look cosmetically clean. We inspect the undercarriage specifically for this kind of damage on every pre-purchase inspection.</p>
@@ -91,3 +93,11 @@ faqs:
       <a href="tel:+18632669708" class="btn btn-orange" onclick="if(typeof gtag==='function')gtag('event','call_click',{'event_category':'engagement','event_label':'service_bottom_phone_button'})">Call 863-266-9708</a>
     </div>
   </section>
+
+## Mobile Used Car Inspection Before You Buy
+
+Jason's Mobile Mechanics brings the inspection to the vehicle, so you don't need to ask a seller to take the car to a shop. We inspect used cars at the seller's location in Port Charlotte and nearby communities, including [North Port](/locations/north-port), [Punta Gorda](/locations/punta-gorda), [Englewood](/locations/englewood) and [Venice](/locations/venice).
+
+You get an upfront quote before the inspection begins. If an extra problem turns up that you want fixed, you're told the cost before any work is done on it. Same-day appointments are offered, and quote requests get a reply within one business day.
+
+Already own a car with a warning light on? See our [check engine light diagnostics](/services/engine-diagnostics) service.

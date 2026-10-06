@@ -1,9 +1,14 @@
 ---
-title: "Mobile Mechanic in Port Charlotte, FL | Jason's Mobile Mechanics"
-description: "Jason's Mobile Mechanics brings mobile auto repair straight to your driveway in Port Charlotte, FL. Brakes, batteries, diagnostics & more. Call now."
-heading: "YOUR MECHANIC COMES TO YOU"
+title: "Mobile Mechanic in Port Charlotte, FL | We Come to You"
+description: "On-site repairs at home, work or roadside in Port Charlotte and Charlotte County. Upfront quotes, same-day appointments, no tow needed. Call (863) 266-9708."
+heading: "Mobile Mechanic in Port Charlotte, FL"
 subheading: "Jason's Mobile Mechanics brings full-service auto repair straight to your driveway, office parking lot, or roadside in Port Charlotte and throughout Charlotte County. No tow truck. No waiting room. No wasted day."
 path: "/"
+faqs:
+  - question: "Do you come to my house or workplace?"
+    answer: "Yes. Jason's Mobile Mechanics is a mobile service, so we come to your home, your workplace or the roadside and do the repair on-site. There's no tow needed, and we carry tools and common parts for the most frequent repairs."
+  - question: "Will I know the price before work starts?"
+    answer: "Yes. You get an upfront quote before any work begins. If we find an extra problem along the way, we tell you what it will cost before we work on it, so you decide what gets done."
 ---
 
 <!-- HERO -->
@@ -13,8 +18,8 @@ path: "/"
       <h1>YOUR MECHANIC<br><span class="highlight">COMES TO YOU</span></h1>
       <p class="hero-lead">Jason's Mobile Mechanics brings full-service auto repair straight to your driveway, office parking lot, or roadside in Port Charlotte and throughout Charlotte County. No tow truck. No waiting room. No wasted day.</p>
       <div class="hero-badges">
-        <span class="badge">Licensed &amp; Insured</span>
-        <span class="badge">Trusted by 100+ People</span>
+        
+        
         <span class="badge">Same-Day Appointments</span>
       </div>
       <div class="hero-cta-row">
@@ -23,22 +28,23 @@ path: "/"
       </div>
     </div>
   </section>
+
+## Mobile Mechanic Serving Port Charlotte and Southwest Florida
+
+Jason's Mobile Mechanics is based in Port Charlotte and brings auto repair to your driveway, office parking lot or roadside across Charlotte County. That includes Harbour Heights, Deep Creek, Gulf Cove and Murdock, plus nearby [Punta Gorda](/locations/punta-gorda), [North Port](/locations/north-port) and [Venice](/locations/venice).
+
+We handle brakes, batteries, oil changes, engine diagnostics, AC, pre-purchase inspections and more, right where your car is parked. You get an upfront quote before any work begins, and same-day appointments are offered. Call (863) 266-9708 or request a quote and we'll reply within one business day.
+
   <!-- TRUST STRIP -->
   <div class="trust-strip">
     <div class="container">
       <div class="trust-inner">
-        <div class="trust-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l8 4v6c0 5-3.4 9.4-8 10-4.6-.6-8-5-8-10V6l8-4z"></path></svg>
-          Licensed &amp; Insured
-        </div>
+        
         <div class="trust-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"></path></svg>
           Same-Day Appointments
         </div>
-        <div class="trust-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-          Trusted by 100+ Customers
-        </div>
+        
         <div class="trust-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"></circle></svg>
           On-Site, Upfront Estimates
@@ -253,18 +259,12 @@ path: "/"
   <div class="trust-strip">
     <div class="container">
       <div class="trust-inner">
-        <div class="trust-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l8 4v6c0 5-3.4 9.4-8 10-4.6-.6-8-5-8-10V6l8-4z"></path></svg>
-          Licensed &amp; Insured
-        </div>
+        
         <div class="trust-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"></path></svg>
           Same-Day Appointments
         </div>
-        <div class="trust-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-          Trusted by 100+ Customers
-        </div>
+        
         <div class="trust-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"></circle></svg>
           On-Site, Upfront Estimates

@@ -1,12 +1,15 @@
 ---
 title: "Mobile Mechanic in Venice, FL | Jason's Mobile Mechanics"
-description: "Jason's Mobile Mechanics brings on-site auto repair to Venice, FL — Venice Island, the Legacy Trail area, and surrounding neighborhoods. Call now."
+description: "On-site engine diagnostics and repairs in Venice and across Sarasota County. Upfront quotes before any work and same-day appointments. Call (863) 266-9708."
 name: "Venice, FL"
 heading: "MOBILE MECHANIC IN VENICE, FL"
 summary: "On-site auto repair for Venice drivers — from the Island and the Legacy Trail neighborhoods to the communities east of I-75. Jason's Mobile Mechanics comes to you."
 order: 4
 city: "Venice"
 region: "FL"
+faqs:
+  - question: "Do you come to Venice for same-day repairs?"
+    answer: "Yes. Venice is part of our service area, and Jason's Mobile Mechanics offers same-day appointments. Call (863) 266-9708 to set one up. If you send a quote request instead, we reply within one business day. You get an upfront quote before any work begins."
 ---
 
 <section class="hero section-dark">
@@ -81,3 +84,20 @@ region: "FL"
       <a href="tel:+18632669708" class="btn btn-orange" onclick="if(typeof gtag==='function')gtag('event','call_click',{'event_category':'engagement','event_label':'location_bottom_phone_button'})">Call 863-266-9708</a>
     </div>
   </section>
+
+## Engine Diagnostics in Venice
+
+A check engine light or rough idle doesn't have to mean a tow to a shop. Jason's Mobile Mechanics provides [engine diagnostics](/services/engine-diagnostics) on-site in Venice and across Sarasota County. We come to your home, your workplace or the roadside, with no tow needed.
+
+Once we know what's wrong, you get an upfront quote before any work begins. If we find an extra problem, we tell you what it will cost before we work on it, so there are no surprises. We carry tools and common parts for the most frequent repairs. Call (863) 266-9708 to book a diagnostic visit in Venice.
+
+## On-Site Repairs Available in Venice
+
+Here are some of the repairs Jason's Mobile Mechanics handles on-site for Venice drivers:
+
+- [Brake repair](/services/brake-repair): brake work done where your vehicle is parked.
+- [Battery replacement and jump starts](/services/battery-replacement): we stock standard flooded and AGM batteries.
+- [AC repair and recharge](/services/ac-repair): air conditioning repair and recharge on-site.
+- [Alternator and starter repair](/services/alternator-starter): charging and no-start problems repaired without a trip to the shop.
+
+Every job starts with an upfront quote. Same-day appointments are offered.

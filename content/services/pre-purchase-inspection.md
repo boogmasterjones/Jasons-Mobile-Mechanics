@@ -11,7 +11,7 @@ faqs:
   - question: "What does a pre-purchase inspection cover?"
     answer: "We check the engine with an OBD-II diagnostic scan, brakes, tires, and suspension components, frame and body for accident damage indicators, all fluid levels and leak points, the electrical system and battery condition, and perform a short test drive."
   - question: "How much does a pre-purchase inspection cost compared to what it can save?"
-    answer: "A pre-purchase inspection typically costs $150-$200. It can reveal hidden problems that would cost thousands in post-purchase repairs and gives you negotiating leverage if issues are found — often saving far more than the cost of the inspection."
+    answer: "Call 863-266-9708 for an upfront quote on the vehicle you want inspected. An inspection can reveal hidden problems that would cost thousands in post-purchase repairs and gives you negotiating leverage if issues are found — often saving far more than the cost of the inspection."
   - question: "Can you inspect a car I found on a private sale or online listing?"
     answer: "Yes. Jason's Mobile Mechanics comes to the vehicle, so the inspection happens wherever it is parked in Port Charlotte or the surrounding Southwest Florida area. There is no need to arrange a shop visit with the seller."
 ---

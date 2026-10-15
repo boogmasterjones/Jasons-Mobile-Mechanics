@@ -18,8 +18,6 @@ faqs:
       <h1>Mobile Mechanic That <span class="highlight">Comes to You</span> in Port Charlotte &amp; Southwest Florida</h1>
       <p class="hero-lead">Jason's Mobile Mechanics brings full-service auto repair straight to your driveway, office parking lot, or roadside in Port Charlotte and throughout Charlotte County. No tow truck. No waiting room. No wasted day.</p>
       <div class="hero-badges">
-        
-        
         <span class="badge">Same-Day Appointments</span>
       </div>
       <div class="hero-cta-row">
@@ -39,12 +37,10 @@ We handle [brake repair](/services/brake-repair), [battery replacement](/service
   <div class="trust-strip">
     <div class="container">
       <div class="trust-inner">
-        
         <div class="trust-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"></path></svg>
           Same-Day Appointments
         </div>
-        
         <div class="trust-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"></circle></svg>
           On-Site, Upfront Estimates
@@ -259,12 +255,10 @@ We handle [brake repair](/services/brake-repair), [battery replacement](/service
   <div class="trust-strip">
     <div class="container">
       <div class="trust-inner">
-        
         <div class="trust-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"></path></svg>
           Same-Day Appointments
         </div>
-        
         <div class="trust-item">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"></circle></svg>
           On-Site, Upfront Estimates
